@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="tabIndicatorWidth" format="color" />
+    <attr name="tabSelectedTextSize" format="dimension" />
+    <declare-styleable name="CustomTabLayout">
+        <attr name="tabIndicatorWidth" />
+        <attr name="tabSelectedTextSize" />
+    </declare-styleable>
+</resources>

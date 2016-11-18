@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xuj.newtools.NetEaseMusic.Activity.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/themeColor"
+        app:contentInsetStart="0.0dp"
+        app:layout_scrollFlags="enterAlways|scroll"
+        app:theme="@style/ToolbarTheme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/search_horizon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/search_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/search_txt"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_white"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bar_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/actionbar_search"/>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:background="@color/gray_white"
+                />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>
